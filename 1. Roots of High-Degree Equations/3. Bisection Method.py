@@ -20,11 +20,11 @@ print('The number of iterations is: ', n)
 # t_i = datetime.now()
 i = 0
 while i < n:
-    r = (a+b)/2
-    err = abs(r - a)
-    print(f'at iteration {i+1} app. root is: {r}, error is {err}')
-    if (f(a) * f(r) < 0):
-        b = r
-    elif (f(b) * f(r) < 0):
-        a = r
+    root = (a + b) / 2
+    err = abs(root - a)
+    print(f'at iteration {i+1} app. root is: {root}, error is {err}')
+    if (f(a) * f(root) < 0):
+        b = root
+    elif (f(b) * f(root) < 0):
+        a = root
     i += 1
